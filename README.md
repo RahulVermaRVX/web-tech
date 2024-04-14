@@ -12,6 +12,10 @@
       <td><h3>java-servlet</h3></td>
       <td>Project for Java Servlets. including all Servlet topics.</td>
     </tr>
+     <tr>
+      <td><h3>html-pages</h3></td>
+      <td>Directory for HTML pages that are copied to java-servlet project</td>
+    </tr>
   </tbody>
 </table>
 
