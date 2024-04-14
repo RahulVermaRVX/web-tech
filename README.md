@@ -1,7 +1,10 @@
 <h1>This repository includes multiple projects. Each project is in its own directory independent of each other (mentioned otherwise).</h1>
+<br>
+
 
 <h2>Changelog</h2>
 <li>Added servlets Examples. But these excludes the Session and Cookies as this time.</li>
+<br>
 
 
 <h2>Projects Included</h2>
@@ -15,23 +18,25 @@
     <tr>
       <td><h3>html-css-js</h3></td>
       <td>Contains examples for HTML, CSS and JavaScript.</td>
+    </tr>
     <tr>
       <td><h3>html-helper-pages</h3></td>
       <td>Directory for HTML pages that are copied to java-servlet project</td>
+    </tr>
     <tr>
       <td><h3>java-servlet</h3></td>
       <td>Project for Java Servlets. including all Servlet topics.</td>
     </tr>
-     
-    </tr>
   </tbody>
 </table>
+<br>
 
 
 <h2>Tool Chain Required</h2>
 <li>Java SE 8</li>
 <li>Apache Netbeans 12.x</li>
 <li>Apache Tomcat 9.x</li>
+<br>
 
 
 <h2>Setting up the Enviornment Variables</h2>
