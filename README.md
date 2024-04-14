@@ -9,12 +9,16 @@
     </tr>
   <tbody>
     <tr>
+      <td><h3>html-css-js</h3></td>
+      <td>Contains examples for HTML, CSS and JavaScript.</td>
+    <tr>
+      <td><h3>html-helper-pages</h3></td>
+      <td>Directory for HTML pages that are copied to java-servlet project</td>
+    <tr>
       <td><h3>java-servlet</h3></td>
       <td>Project for Java Servlets. including all Servlet topics.</td>
     </tr>
-     <tr>
-      <td><h3>html-pages</h3></td>
-      <td>Directory for HTML pages that are copied to java-servlet project</td>
+     
     </tr>
   </tbody>
 </table>
