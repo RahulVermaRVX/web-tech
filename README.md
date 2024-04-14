@@ -4,8 +4,8 @@
 <table>
   <thead>
     <tr>
-      <th>Directory</th>
-      <th>Decription</th>
+      <th><h3>Directory</h3></th>
+      <th><h3>Decription</h3></th>
     </tr>
   <tbody>
     <tr>
@@ -15,13 +15,16 @@
   </tbody>
 </table>
 
+
 <h2>Tool Chain Required</h2>
 
 <li>Java SE 8</li>
 <li>Apache Netbeans 12.x</li>
 <li>Apache Tomcat 9.x</li>
 
+
 <h2>Setting up the Enviornment Variables</h2>
+
 <li><strong>JAVA_HOME -> </strong>Set it to the jdk folder of your Java installation.</li>
 <li><strong>CATALINA_HOME -> </strong>Set it to the Apache Tomcat root folder of your Apache Tomcat installation.</li>
 
