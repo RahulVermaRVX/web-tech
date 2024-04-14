@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Login</title>
+    <style>
+        .main { width: 50%; margin: 50px auto; }
+        .title{ margin:20px; }
+        .form-border { width: 50%; margin:10px; padding: 10px; }
+        .form-element{ margin:5px; padding: 5px; }
+        .ele-spacer{ width: 50%; display: inline; margin: 10px; padding: 10px; margin-right: auto; }
+        .button{ margin: 5px 30px; padding: 2px 2px; }
+    </style>
+</head>
+
+<body>
+    <div class='main'>
+        <h1 class='title'>Please Login</h1>
+        <div class='form-border'>
+            <form action='/java-servlet/login-check' method='POST'>
+                <div class='form-element'>
+                   <div class='ele-spacer'><label for='user'>Username</label></div>
+                   <div class='ele-spacer'><input type='text' id='user' name='uname'></div>
+                </div>
+                <div class='form-element'>
+                    <div class='ele-spacer'><label for='pass'>Password</label></div>
+                    <div class='ele-spacer'><input type='password' id='pass' name='passwd'></div>
+                </div>
+                <div>
+                    <button class='button' type='submit'>Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
