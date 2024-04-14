@@ -1,4 +1,4 @@
-<h1>This repository includes multiple projects. Each project is in its own directory independent fo each other.</h1>
+<h1>This repository includes multiple projects. Each project is in its own directory independent of each other.</h1>
 
 <h2>Projects Included</h2>
 <table>
