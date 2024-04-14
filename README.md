@@ -1,5 +1,8 @@
 <h1>This repository includes multiple projects. Each project is in its own directory independent of each other (mentioned otherwise).</h1>
 
+<h2>Changelog</h2>
+<li>Added servlets Examples. But these excludes the Session and Cookies as this time.</li>
+
 <h2>Projects Included</h2>
 <table>
   <thead>
