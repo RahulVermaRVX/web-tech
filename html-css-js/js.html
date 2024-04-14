@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>JavaScript Demo</h1>   
+    <p>Click the Button to change the following text.</p>
+    <p id="txtchange">This text will change when you will click the Button</p>
+    <button onclick="textChange();">Click me</button>
+    <button onclick="textReset();">Reset</button>
+    <button onclick="showAlert();">Alert</button>
+
+    <script>
+        function textChange(){
+            document.getElementById("txtchange").innerHTML = "Text Changed using function call.";
+        }
+
+        function textReset(){
+            document.getElementById("txtchange").innerHTML = "This text will change when you will click the Button";
+            // This will print the message in browser console.
+            console.log("Text Reset");
+        }
+
+        function showAlert(){
+            alert("This is an alert message.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrays</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+
+    <h3>Accessing full Array</h3>
+    <p id="accessArray"></p>
+
+    <script>
+        const arrCity =["Amritsar", "Jallandhar", "Chandigarh", "Ludhiana", "Gurdaspur", "Patiala", 12345];
+        console.log("accessing full array object");
+        console.log(arrCity);
+        document.getElementById("accessArray").innerHTML = arrCity;
+
+        console.log("Accesing Array");
+        console.log(arrCity[0]);
+        console.log("====================================");
+        
+        
+        console.log("Geeting Length of Array");
+        console.log(arrCity.length);
+        console.log("====================================");
+        
+        console.log("Adding a new element");
+        arrCity[arrCity.length] = "Pathankot";
+        console.log(arrCity);
+        console.log("====================================");
+        
+        console.log("Adding a new element");
+        arrCity.push("Bathinda");
+        console.log(arrCity);
+        console.log("====================================");
+        
+        console.log("Converting Array to String");
+        const arrStr = arrCity.toString();
+        console.log(arrStr);
+        console.log("====================================");
+        
+        console.log("Printing the typeof of Array");
+        console.log(typeof(arrCity)+"\n");
+        console.log("====================================");
+        
+        console.log("Sorting the Array.");
+        const arrDup = arrCity.slice();
+        console.log(arrCity.sort());
+        console.log("Original Array will sorted.");
+        console.log(arrCity);
+        console.log(arrDup);
+        
+        // Adding Element to last of Array, use push() method
+
+        // Removing Element from last of Array, Use pop() method
+
+        // Removing Element from beginning of Array, use shift() method
+
+        // Adding Element to beginning of Array, use unshift() method
+    
+        // To merge to arrays, use concat() method
+
+        // To get a part of array, use slice() method. Not to confuse with splice() method
+
+        // To delete elements at arbitrary postion, use splice() method. Not to confuse with slice() method
+
+
+        console.log();
+        console.log();console.log();console.log();console.log();console.log();console.log();
+
+
+        console.log("Adding a new item in Array...");
+    </script>
+</body>
+</html>

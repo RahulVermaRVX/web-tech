@@ -1,0 +1,74 @@
+.h1-center{
+    text-align: center;
+}
+
+table, th, td{
+    /* This will display borders*/
+    border: 2px solid black;
+    /* This will display borders with no spaces between them */
+    border-collapse: collapse;
+}
+
+.tb-w{
+    /* This will set the width of the table */
+    /* width: 100%; */
+    width: 300px;
+}
+
+.tb-h{
+    /* This will set the height of the table */
+    height:250px;
+}
+
+.td-txt-center{
+    text-align: center;
+}
+
+.td-txt-right{
+    text-align: right;
+}
+
+.td-txt-justify{
+    text-align: justify;
+}
+
+.td-p{
+    padding: 20px;
+}
+
+tr:nth-child(even){
+    /* Select the even rows only. */
+    background-color: rgb(240, 240, 240);
+}
+
+tr:hover{
+    /* If you place your mouse pinter over any row, this will change the background color */
+    background-color: rgb(196, 196, 196);
+}
+
+.ulist-style{
+/*  include this class in Unordered List <ul>. Change the values as given in comments
+    to see the effect */
+    list-style-type: disc;
+    /* circle, disc, square */
+}
+
+.olist-style{
+/*  include this class in Ordered List <ol>. Change the values as given in comments
+    to see the effect */
+    list-style-type: upper-latin;
+    /* none, upper-roman, lower-roman, upper-alpha, lower-alpha, armenian, georgian,
+       lower-greek, */
+}
+
+li{
+    margin:10px;
+    padding: 10px;
+    /*background-color: burlywood;*/
+    /*display: inline-block;*/
+}
+
+li:hover {
+ /* If you place your mouse pinter over any list item, this will change the background color */
+    background-color: yellow;
+}
