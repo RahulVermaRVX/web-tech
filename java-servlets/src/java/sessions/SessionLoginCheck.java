@@ -1,17 +1,17 @@
-package login;
+package sessions;
 
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  * @author rahulxxl
  */
-public class LoginCheck extends HttpServlet {
+public class SessionLoginCheck extends HttpServlet {
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -41,16 +41,20 @@ public class LoginCheck extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet LoginCheck</title>");
+            out.println("<title>Session LoginCheck</title>");
             out.println("</head>");
             out.println("<body>");
         
             // Now we will check whether Login is successfull or not.
             if (isMatched == true){
                 out.println("<h1>Login Successfull.</h1>");
-                // Now we will create a Cookie to test in the profile page
-                Cookie ck = new Cookie("uname", uname);
-                response.addCookie(ck);
+                // Now we will create a session to test in the profile page
+                /* getSessison returns the current HttpSession associated with this request or, 
+                 * if there is no current session exists and we pass true, returns a new session.
+                 * If we pass false and the request has no valid HttpSession i.e if session does not exists, this method returns null.
+                 */
+                HttpSession sn = request.getSession(true);
+                sn.setAttribute("uname", uname);
             }
             else{
                 out.println("<h1>Username or Password not correct.");
@@ -58,33 +62,27 @@ public class LoginCheck extends HttpServlet {
             out.println("</body>");
             out.println("</html>");
             
-            /* This is just for reference. Do not remove these comments.
-            
-            String urlProfilePage = request.getContextPath() + "/profile";
-            String urlLoginPage = request.getContextPath() + "/login";
-            if(isMatched == true)
-                response.sendRedirect(urlProfilePage);
-            else
-                response.sendRedirect(urlLoginPage);
-            */
         }
     }
 
+   
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
     }
 
+    
     @Override
     public String getServletInfo() {
         return "Short description";
     }
-
+    
 }

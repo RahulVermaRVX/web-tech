@@ -12,6 +12,30 @@
         <servlet-name>LoginCheck</servlet-name>
         <servlet-class>login.LoginCheck</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>login.Profile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClearCookie</servlet-name>
+        <servlet-class>login.ClearCookie</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionLogin</servlet-name>
+        <servlet-class>sessions.SessionLogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionLoginCheck</servlet-name>
+        <servlet-class>sessions.SessionLoginCheck</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SessionProfile</servlet-name>
+        <servlet-class>sessions.SessionProfile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ClearSession</servlet-name>
+        <servlet-class>sessions.ClearSession</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>MainServlet</servlet-name>
         <url-pattern>/</url-pattern>
@@ -23,6 +47,30 @@
     <servlet-mapping>
         <servlet-name>LoginCheck</servlet-name>
         <url-pattern>/login-check</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClearCookie</servlet-name>
+        <url-pattern>/clear-cookie</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionLogin</servlet-name>
+        <url-pattern>/session/login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionLoginCheck</servlet-name>
+        <url-pattern>/session/login-check</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SessionProfile</servlet-name>
+        <url-pattern>/session/profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClearSession</servlet-name>
+        <url-pattern>/session/clear-session</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
